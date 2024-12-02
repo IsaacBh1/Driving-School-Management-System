@@ -35,6 +35,40 @@ namespace DrivingSchool_DataAccessLayer
             return Users;
         }
 
+
+        public static DataTable GetUserByUserNameAndPassword(string userName , string Password)
+        {
+            DataTable Users = new DataTable();
+            SqlConnection connection = new SqlConnection(ConnectionString);
+            string query = "select * from Users where UserName = @userName and Password = @Password; ;";
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@userName", userName); 
+            command.Parameters.AddWithValue("@Password", Password);
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    Users.Load(reader);
+                }
+                reader.Close();
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return Users;
+        }
+
+
+
+
+
         public static bool GetUserInfoByID(int userID, ref string Password, ref int Permission, ref string UserName, ref int PersonID)
         {
             SqlConnection sqlConnection = new SqlConnection(ConnectionString);

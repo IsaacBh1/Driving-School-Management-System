@@ -62,6 +62,7 @@
     <Compile Include="clsFuelTypes.cs" />
     <Compile Include="clsVehicle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\Hash.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DrivingSchool-DataAccessLayer\DrivingSchool-DataAccessLayer.csproj">
@@ -69,5 +70,6 @@
       <Name>DrivingSchool-DataAccessLayer</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

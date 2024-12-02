@@ -1,7 +1,7 @@
 ﻿using DrivingSchool_BusinesseLayer;
 using DrivingSchool_DataAccessLayer;
 using System;
-using System.Security.Policy;
+using System.Data;
 
 namespace Driving_school_BusinessLayer
 {
@@ -95,6 +95,27 @@ namespace Driving_school_BusinessLayer
         public static bool IsPersonExists(int ID)
         {
             return clsUserDataAccess.IsUserExists(ID);
+        }
+
+        public static clsUser GetUserInfosFromUserNamePassword(string UserName, string Password)
+        {
+            DataTable UserInfos = clsUserDataAccess.GetUserByUserNameAndPassword(UserName, Password);
+            if (UserInfos.Rows.Count == 0)
+            {
+                return null;
+            }
+
+            foreach (DataRow item in UserInfos.Rows)
+            {
+                return new clsUser(
+                                  Convert.ToInt16 (item[0]),
+                                  Convert.ToInt16(item[4]),
+                                  (string) item[1],
+                                  Convert.ToInt16(item[2]),
+                                  Convert.ToString(item[3])
+                );
+            }
+            return null; 
         }
     }
 }

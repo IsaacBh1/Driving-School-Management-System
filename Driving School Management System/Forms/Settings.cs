@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System; 
 using System.Windows.Forms;
 using System.Drawing;
 using System.Data;
@@ -8,7 +8,7 @@ namespace Driving_School_Management_System.Forms
 {
     public partial class Settings : Form
     {
-        private bool expencesTypesToggle = true; // true if open
+        private bool expencesTypesToggle = true; // true if open 
         private bool DrivingLicenseTypesToggle = true; // true if open
         private ContextMenuStrip contextMenuExpenceType;
         private ContextMenuStrip contextDrivingLisenceType;
@@ -50,7 +50,6 @@ namespace Driving_School_Management_System.Forms
                 var cellRect = DGVExpenceTypes.GetCellDisplayRectangle(e.ColumnIndex, e.RowIndex, true);
                 selectedId = Convert.ToInt32(DGVExpenceTypes.Rows[e.RowIndex].Cells[0].Value);
                 Point menuLocation = DGVExpenceTypes.PointToScreen(new Point(cellRect.X, cellRect.Y + cellRect.Height));
-                // Show the context menu at the calculated location
                 contextMenuExpenceType.Show(menuLocation);
             }
 
@@ -146,19 +145,16 @@ namespace Driving_School_Management_System.Forms
                 pnlDrivingLicenses.Height = 96;
                 lblDrivingLisenceType.Image = Properties.Resources.caret_circle_down;
                 lblOpen_closeLicense.Text = "اضغط للفتح";
-
             }
             else //close => open 
             {
                 pnlDrivingLicenses.Height = 444;
                 lblDrivingLisenceType.Image = Properties.Resources.caret_circle_up;
                 lblOpen_closeLicense.Text = "اضغط للإغلاق";
-
             }
 
             DrivingLicenseTypesToggle = !DrivingLicenseTypesToggle;
         }
-
 
 
         private void ToggleExpencesTypesPanel()

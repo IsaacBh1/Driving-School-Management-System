@@ -2,7 +2,8 @@
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using System.Drawing;
-using Driving_School_Management_System; 
+using Driving_school_BusinessLayer;
+using Driving_school_BusinessLayer.Utilities;
 namespace Driving_School_Management_System.Forms
 {
     public partial class LoginForm : Form
@@ -56,8 +57,29 @@ namespace Driving_School_Management_System.Forms
             Close(); 
         }
 
+        private bool CheckInputs()
+        {
+            return !string.IsNullOrEmpty(txtbxPassword.Text) && !string.IsNullOrEmpty(txtbxUserName.Text); 
+        }
+
         private void btnlogin_Click(object sender, EventArgs e)
         {
+
+            if(!CheckInputs())
+            {
+                lblErr.ForeColor = Color.Salmon;
+                return; 
+            }
+
+            clsUser CurrentUser = clsUser.GetUserInfosFromUserNamePassword(txtbxUserName.Text,clsHash.HashPassword(txtbxPassword.Text));
+            if (CurrentUser is null)
+            {
+                lblErr.ForeColor = Color.Salmon;
+                return;
+            }
+
+            Global.User = CurrentUser; 
+
             MainForm main = new MainForm();
             Hide();
             main.ShowDialog();

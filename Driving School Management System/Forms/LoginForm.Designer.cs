@@ -29,106 +29,72 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
-            this.minimize = new System.Windows.Forms.PictureBox();
-            this.close = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.txtboxID = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtbxUserName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtbxPassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnlogin = new Guna.UI2.WinForms.Guna2Button();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblErr = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.minimize = new System.Windows.Forms.PictureBox();
+            this.close = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.minimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.close)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // minimize
+            // txtbxUserName
             // 
-            this.minimize.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.minimize.Image = global::Driving_School_Management_System.Properties.Resources.minus;
-            this.minimize.Location = new System.Drawing.Point(43, 12);
-            this.minimize.Name = "minimize";
-            this.minimize.Size = new System.Drawing.Size(22, 23);
-            this.minimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.minimize.TabIndex = 1;
-            this.minimize.TabStop = false;
-            this.minimize.Click += new System.EventHandler(this.minimize_Click);
+            this.txtbxUserName.Animated = true;
+            this.txtbxUserName.BorderRadius = 20;
+            this.txtbxUserName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtbxUserName.DefaultText = "";
+            this.txtbxUserName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtbxUserName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtbxUserName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtbxUserName.DisabledState.Parent = this.txtbxUserName;
+            this.txtbxUserName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtbxUserName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtbxUserName.FocusedState.Parent = this.txtbxUserName;
+            this.txtbxUserName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtbxUserName.HoverState.Parent = this.txtbxUserName;
+            this.txtbxUserName.Location = new System.Drawing.Point(596, 135);
+            this.txtbxUserName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtbxUserName.Name = "txtbxUserName";
+            this.txtbxUserName.PasswordChar = '\0';
+            this.txtbxUserName.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.txtbxUserName.PlaceholderText = "";
+            this.txtbxUserName.SelectedText = "";
+            this.txtbxUserName.ShadowDecoration.Parent = this.txtbxUserName;
+            this.txtbxUserName.Size = new System.Drawing.Size(374, 50);
+            this.txtbxUserName.TabIndex = 13;
             // 
-            // close
+            // txtbxPassword
             // 
-            this.close.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.close.Image = global::Driving_School_Management_System.Properties.Resources.x__3_;
-            this.close.Location = new System.Drawing.Point(15, 12);
-            this.close.Name = "close";
-            this.close.Size = new System.Drawing.Size(22, 23);
-            this.close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.close.TabIndex = 1;
-            this.close.TabStop = false;
-            this.close.Click += new System.EventHandler(this.close_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Driving_School_Management_System.Properties.Resources.DrivoLogo;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 70);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(518, 535);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // txtboxID
-            // 
-            this.txtboxID.Animated = true;
-            this.txtboxID.BorderRadius = 20;
-            this.txtboxID.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtboxID.DefaultText = "";
-            this.txtboxID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtboxID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtboxID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtboxID.DisabledState.Parent = this.txtboxID;
-            this.txtboxID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtboxID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtboxID.FocusedState.Parent = this.txtboxID;
-            this.txtboxID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtboxID.HoverState.Parent = this.txtboxID;
-            this.txtboxID.Location = new System.Drawing.Point(596, 135);
-            this.txtboxID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtboxID.Name = "txtboxID";
-            this.txtboxID.PasswordChar = '\0';
-            this.txtboxID.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.txtboxID.PlaceholderText = "";
-            this.txtboxID.SelectedText = "";
-            this.txtboxID.ShadowDecoration.Parent = this.txtboxID;
-            this.txtboxID.Size = new System.Drawing.Size(374, 50);
-            this.txtboxID.TabIndex = 13;
-            // 
-            // guna2TextBox1
-            // 
-            this.guna2TextBox1.Animated = true;
-            this.guna2TextBox1.BorderRadius = 20;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(596, 243);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '*';
-            this.guna2TextBox1.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(374, 50);
-            this.guna2TextBox1.TabIndex = 13;
+            this.txtbxPassword.Animated = true;
+            this.txtbxPassword.BorderRadius = 20;
+            this.txtbxPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtbxPassword.DefaultText = "";
+            this.txtbxPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtbxPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtbxPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtbxPassword.DisabledState.Parent = this.txtbxPassword;
+            this.txtbxPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtbxPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtbxPassword.FocusedState.Parent = this.txtbxPassword;
+            this.txtbxPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtbxPassword.HoverState.Parent = this.txtbxPassword;
+            this.txtbxPassword.Location = new System.Drawing.Point(596, 243);
+            this.txtbxPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtbxPassword.Name = "txtbxPassword";
+            this.txtbxPassword.PasswordChar = '*';
+            this.txtbxPassword.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.txtbxPassword.PlaceholderText = "";
+            this.txtbxPassword.SelectedText = "";
+            this.txtbxPassword.ShadowDecoration.Parent = this.txtbxPassword;
+            this.txtbxPassword.Size = new System.Drawing.Size(374, 50);
+            this.txtbxPassword.TabIndex = 13;
             // 
             // label1
             // 
@@ -170,16 +136,16 @@
             this.btnlogin.Text = "تسجيل الدخول";
             this.btnlogin.Click += new System.EventHandler(this.btnlogin_Click);
             // 
-            // label3
+            // lblErr
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(808, 302);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(150, 19);
-            this.label3.TabIndex = 43;
-            this.label3.Text = "هناك معلومات خاطئة";
+            this.lblErr.AutoSize = true;
+            this.lblErr.BackColor = System.Drawing.Color.Transparent;
+            this.lblErr.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblErr.Location = new System.Drawing.Point(808, 302);
+            this.lblErr.Name = "lblErr";
+            this.lblErr.Size = new System.Drawing.Size(150, 19);
+            this.lblErr.TabIndex = 43;
+            this.lblErr.Text = "هناك معلومات خاطئة";
             // 
             // label4
             // 
@@ -192,6 +158,40 @@
             this.label4.TabIndex = 44;
             this.label4.Text = "مرحبا بك";
             // 
+            // minimize
+            // 
+            this.minimize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.minimize.Image = global::Driving_School_Management_System.Properties.Resources.minus;
+            this.minimize.Location = new System.Drawing.Point(43, 12);
+            this.minimize.Name = "minimize";
+            this.minimize.Size = new System.Drawing.Size(22, 23);
+            this.minimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.minimize.TabIndex = 1;
+            this.minimize.TabStop = false;
+            this.minimize.Click += new System.EventHandler(this.minimize_Click);
+            // 
+            // close
+            // 
+            this.close.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.close.Image = global::Driving_School_Management_System.Properties.Resources.x__3_;
+            this.close.Location = new System.Drawing.Point(15, 12);
+            this.close.Name = "close";
+            this.close.Size = new System.Drawing.Size(22, 23);
+            this.close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.close.TabIndex = 1;
+            this.close.TabStop = false;
+            this.close.Click += new System.EventHandler(this.close_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Driving_School_Management_System.Properties.Resources.DrivoLogo;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 70);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(518, 535);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -199,12 +199,12 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1017, 590);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lblErr);
             this.Controls.Add(this.btnlogin);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.guna2TextBox1);
-            this.Controls.Add(this.txtboxID);
+            this.Controls.Add(this.txtbxPassword);
+            this.Controls.Add(this.txtbxUserName);
             this.Controls.Add(this.minimize);
             this.Controls.Add(this.close);
             this.Controls.Add(this.pictureBox1);
@@ -226,12 +226,12 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox close;
         private System.Windows.Forms.PictureBox minimize;
-        private Guna.UI2.WinForms.Guna2TextBox txtboxID;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2TextBox txtbxUserName;
+        private Guna.UI2.WinForms.Guna2TextBox txtbxPassword;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2Button btnlogin;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblErr;
         private System.Windows.Forms.Label label4;
     }
 }

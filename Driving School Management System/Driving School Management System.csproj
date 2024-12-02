@@ -178,6 +178,7 @@
     <Compile Include="Forms\YesNoDesisionForm.Designer.cs">
       <DependentUpon>YesNoDesisionForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Global.cs" />
     <Compile Include="ShowInformationsForms\ShowFileInformations.cs">
       <SubType>Form</SubType>
     </Compile>

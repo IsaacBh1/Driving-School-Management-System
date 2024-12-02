@@ -31,10 +31,6 @@ namespace Driving_School_Management_System
             InitializeComponent();
             ShowWindow<MainWindow>(ref _windows[0]);
             DoubleBuffered = true;
-
-       
-
-
         }
 
             
@@ -147,10 +143,18 @@ namespace Driving_School_Management_System
 
         private void btnclose_Click_1(object sender, EventArgs e)
         {
-            Close(); 
+            Application.Exit(); 
         }
 
-       
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            if (Global.User is null)
+            {
+                Application.Exit(); 
+            }
+            lblUserName.Text = Global.User.UserName;
+            lblEmail.Text = Global.User.Person.Contact.Email; 
+        }
     }
 }
 
