@@ -160,6 +160,12 @@
     <Compile Include="Forms\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\NOPermissionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NOPermissionForm.Designer.cs">
+      <DependentUpon>NOPermissionForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\PaymentWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -354,6 +360,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NOPermissionForm.resx">
+      <DependentUpon>NOPermissionForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PaymentWindow.resx">
       <DependentUpon>PaymentWindow.cs</DependentUpon>
