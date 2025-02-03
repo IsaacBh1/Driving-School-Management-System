@@ -35,6 +35,36 @@ namespace DrivingSchool_DataAccessLayer
             return Expenses;
         }
 
+        public static DataTable GetAllExpensesStatistics()
+        {
+            DataTable Expenses = new DataTable();
+            SqlConnection connection = new SqlConnection(ConnectionString);
+            string query = "DECLARE @TotalAmount money ;SELECT @TotalAmount = SUM(Amount) FROM Expenses;select ExpenceTypes.Name , Sum(amount) as total , (Sum(amount) * 100 / @TotalAmount ) as percentage  from Expenses left join \r\nExpenceTypes on Expenses.ExpenseTypeID = ExpenceTypes.ExpenceTypeID \r\ngroup by ExpenceTypes.Name; \r\n";
+            SqlCommand command = new SqlCommand(query, connection);
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    Expenses.Load(reader);
+                }
+                reader.Close();
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return Expenses;
+        }
+
+
+
+
         public static bool GetExpenseInfoByID(int expenseID, ref int ExpenseTypeID, ref decimal Amount, ref string AdditionalNotes, ref int MoneyBankID)
         {
             SqlConnection sqlConnection = new SqlConnection(ConnectionString);

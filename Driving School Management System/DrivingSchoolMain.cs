@@ -1,6 +1,7 @@
 ﻿using Driving_School_Management_System.Forms;
 using System;
 using System.Diagnostics;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -16,8 +17,8 @@ namespace Driving_School_Management_System
         readonly Stopwatch _frameTimer = Stopwatch.StartNew();
 
         private bool _sideBarExpanded = true;
-      
 
+        ContextMenuStrip ContextManagerSapce = new ContextMenuStrip();
 
 
         int _tabIndex = 0;
@@ -40,7 +41,6 @@ namespace Driving_School_Management_System
         protected override void OnPaint(PaintEventArgs e)
         {
             base.OnPaint(e);
-
             TimeSpan currentFrameTime = _frameTimer.Elapsed;
             float distance = (float)(currentFrameTime - _lastFrameTime).TotalSeconds * SpeedPerSecond;
 
@@ -48,7 +48,7 @@ namespace Driving_School_Management_System
             e.Graphics.FillRectangle(Brushes.Black, _xPosition, 0, BarWidth, ClientSize.Height);
 
             _lastFrameTime = currentFrameTime;
-            Invalidate(); // Triggers repaint for smooth animation
+            Invalidate(); 
         }
 
         private void btnMenu_Click(object sender, EventArgs e)
@@ -154,6 +154,39 @@ namespace Driving_School_Management_System
             }
             lblUserName.Text = Global.User.UserName;
             lblEmail.Text = Global.User.Person.Contact.Email; 
+        }
+
+        private void ManagerSapceButton_Click(object sender, EventArgs e)
+        {
+            ContextManagerSapce.Items.Clear();
+
+            var managersapceitem = new ToolStripMenuItem("مساحة المدير", Properties.Resources.gear);
+            managersapceitem.Click += ShowManagerSpace;
+            ContextManagerSapce.Items.Add(managersapceitem);
+
+            if (sender is PictureBox pictureBox)
+            {
+                var mousePosition = pictureBox.PointToClient(Cursor.Position);
+                ContextManagerSapce.Show(pictureBox, mousePosition);
+            }
+        }
+
+
+        private void ShowManagerSpace(object sender, EventArgs e)
+        {
+            //throw new NotImplementedException();
+        }
+
+        private void ExamsLessonsSckedular_Click(object sender, EventArgs e)
+        {
+            Lessons_Exams lessonswindow = new Lessons_Exams();
+            lessonswindow.ShowDialog(); 
+        }
+
+        private void LogOutBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+           // Parent.Show(); 
         }
     }
 }

@@ -239,7 +239,7 @@ namespace DrivingSchool_DataAccessLayer
         {
             int Numberoflessons = 0;
             SqlConnection connection = new SqlConnection(ConnectionString);
-            string query = "select count(*)as NumberOfLessons from Lessons where DateOfLessons like '"+day+"' group by Type; "; 
+            string query = "select count(*)as NumberOfLessons from Lessons where DateOfLessons like '"+day+"';"; 
 
             SqlCommand command = new SqlCommand(query, connection);
 

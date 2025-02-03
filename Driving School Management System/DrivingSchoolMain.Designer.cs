@@ -30,7 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.TopPanel = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ManagerSpaceButton = new System.Windows.Forms.PictureBox();
+            this.ExamsLessonsSckedular = new System.Windows.Forms.PictureBox();
             this.btnMinimize = new System.Windows.Forms.PictureBox();
             this.btnclose = new System.Windows.Forms.PictureBox();
             this.btnMenu = new System.Windows.Forms.PictureBox();
@@ -66,13 +67,14 @@
             this.btnStatistics = new System.Windows.Forms.Button();
             this.guna2Separator2 = new Guna.UI2.WinForms.Guna2Separator();
             this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.LogOutBtn = new System.Windows.Forms.Button();
             this.UserNamePanel = new Sipaa.Framework.SPanel();
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblUserName = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.TopPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ManagerSpaceButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ExamsLessonsSckedular)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnclose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).BeginInit();
@@ -97,20 +99,31 @@
             // TopPanel
             // 
             this.TopPanel.BackColor = System.Drawing.Color.White;
-            this.TopPanel.Controls.Add(this.pictureBox1);
+            this.TopPanel.Controls.Add(this.ManagerSpaceButton);
+            this.TopPanel.Controls.Add(this.ExamsLessonsSckedular);
             this.TopPanel.Controls.Add(this.btnMinimize);
             this.TopPanel.Controls.Add(this.btnclose);
             this.TopPanel.Controls.Add(this.btnMenu);
             resources.ApplyResources(this.TopPanel, "TopPanel");
             this.TopPanel.Name = "TopPanel";
             // 
-            // pictureBox1
+            // ManagerSpaceButton
             // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Image = global::Driving_School_Management_System.Properties.Resources.calendar_fill;
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
+            resources.ApplyResources(this.ManagerSpaceButton, "ManagerSpaceButton");
+            this.ManagerSpaceButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ManagerSpaceButton.Image = global::Driving_School_Management_System.Properties.Resources.user_gear__1_;
+            this.ManagerSpaceButton.Name = "ManagerSpaceButton";
+            this.ManagerSpaceButton.TabStop = false;
+            this.ManagerSpaceButton.Click += new System.EventHandler(this.ManagerSapceButton_Click);
+            // 
+            // ExamsLessonsSckedular
+            // 
+            this.ExamsLessonsSckedular.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.ExamsLessonsSckedular, "ExamsLessonsSckedular");
+            this.ExamsLessonsSckedular.Image = global::Driving_School_Management_System.Properties.Resources.calendar_fill;
+            this.ExamsLessonsSckedular.Name = "ExamsLessonsSckedular";
+            this.ExamsLessonsSckedular.TabStop = false;
+            this.ExamsLessonsSckedular.Click += new System.EventHandler(this.ExamsLessonsSckedular_Click);
             // 
             // btnMinimize
             // 
@@ -426,18 +439,19 @@
             // 
             this.guna2Panel6.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel6.BorderRadius = 8;
-            this.guna2Panel6.Controls.Add(this.button2);
+            this.guna2Panel6.Controls.Add(this.LogOutBtn);
             this.guna2Panel6.Cursor = System.Windows.Forms.Cursors.Hand;
             resources.ApplyResources(this.guna2Panel6, "guna2Panel6");
             this.guna2Panel6.Name = "guna2Panel6";
             this.guna2Panel6.ShadowDecoration.Parent = this.guna2Panel6;
             // 
-            // button2
+            // LogOutBtn
             // 
-            resources.ApplyResources(this.button2, "button2");
-            this.button2.Image = global::Driving_School_Management_System.Properties.Resources.sign_out;
-            this.button2.Name = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.LogOutBtn, "LogOutBtn");
+            this.LogOutBtn.Image = global::Driving_School_Management_System.Properties.Resources.sign_out;
+            this.LogOutBtn.Name = "LogOutBtn";
+            this.LogOutBtn.UseVisualStyleBackColor = true;
+            this.LogOutBtn.Click += new System.EventHandler(this.LogOutBtn_Click);
             // 
             // UserNamePanel
             // 
@@ -482,7 +496,8 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.TopPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ManagerSpaceButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ExamsLessonsSckedular)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnclose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).EndInit();
@@ -524,7 +539,7 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel5;
         private System.Windows.Forms.Button button1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel6;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button LogOutBtn;
         private Sipaa.Framework.SPanel UserNamePanel;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label lblUserName;
@@ -534,7 +549,7 @@
         private System.Windows.Forms.Button btnLessons;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel7;
         private System.Windows.Forms.Button btnExams;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox ExamsLessonsSckedular;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Button btnSettings;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel10;
@@ -551,6 +566,7 @@
         private System.Windows.Forms.Button button11;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel9;
         private System.Windows.Forms.Button btnFiles;
+        private System.Windows.Forms.PictureBox ManagerSpaceButton;
     }
 }
 

@@ -39,22 +39,22 @@
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblFirstBalance = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lblIncomes = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lblExpences = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
+            this.internalAmount = new System.Windows.Forms.Label();
             this.FirstRasid = new System.Windows.Forms.Label();
             this.QuiqOverview = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
@@ -62,7 +62,7 @@
             this.flowLayoutPanel8 = new System.Windows.Forms.FlowLayoutPanel();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.label16 = new System.Windows.Forms.Label();
+            this.num_files_lbl = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.flowLayoutPanel7 = new System.Windows.Forms.FlowLayoutPanel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -235,47 +235,47 @@
             this.panel14 = new System.Windows.Forms.Panel();
             this.label27 = new System.Windows.Forms.Label();
             this.panel15 = new System.Windows.Forms.Panel();
-            this.label28 = new System.Windows.Forms.Label();
+            this.numberOfStudentsLbl = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.panel21 = new System.Windows.Forms.Panel();
-            this.label38 = new System.Windows.Forms.Label();
+            this.numberOfFilesLbl = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.panel28 = new System.Windows.Forms.Panel();
-            this.label50 = new System.Windows.Forms.Label();
+            this.numberOfInstructorsLbl = new System.Windows.Forms.Label();
             this.label51 = new System.Windows.Forms.Label();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.panel35 = new System.Windows.Forms.Panel();
-            this.label62 = new System.Windows.Forms.Label();
+            this.numberOfCarsLbl = new System.Windows.Forms.Label();
             this.label63 = new System.Windows.Forms.Label();
             this.pictureBox20 = new System.Windows.Forms.PictureBox();
             this.panel42 = new System.Windows.Forms.Panel();
-            this.label74 = new System.Windows.Forms.Label();
+            this.numberOfUsersLbl = new System.Windows.Forms.Label();
             this.label75 = new System.Windows.Forms.Label();
             this.pictureBox27 = new System.Windows.Forms.PictureBox();
             this.panel51 = new System.Windows.Forms.Panel();
-            this.label90 = new System.Windows.Forms.Label();
+            this.numberOfGroupsLbl = new System.Windows.Forms.Label();
             this.label91 = new System.Windows.Forms.Label();
             this.pictureBox34 = new System.Windows.Forms.PictureBox();
             this.panel52 = new System.Windows.Forms.Panel();
-            this.label92 = new System.Windows.Forms.Label();
+            this.numberOfExpencesLbl = new System.Windows.Forms.Label();
             this.label93 = new System.Windows.Forms.Label();
             this.pictureBox41 = new System.Windows.Forms.PictureBox();
             this.panel53 = new System.Windows.Forms.Panel();
-            this.label94 = new System.Windows.Forms.Label();
+            this.numberOfLessonsLbl = new System.Windows.Forms.Label();
             this.label95 = new System.Windows.Forms.Label();
             this.pictureBox50 = new System.Windows.Forms.PictureBox();
             this.panel54 = new System.Windows.Forms.Panel();
-            this.label96 = new System.Windows.Forms.Label();
+            this.percentageOfSuccessLbl = new System.Windows.Forms.Label();
             this.label97 = new System.Windows.Forms.Label();
             this.pictureBox51 = new System.Windows.Forms.PictureBox();
             this.panel55 = new System.Windows.Forms.Panel();
-            this.label98 = new System.Windows.Forms.Label();
+            this.numberOfArchivedFilesLbl = new System.Windows.Forms.Label();
             this.label99 = new System.Windows.Forms.Label();
             this.pictureBox52 = new System.Windows.Forms.PictureBox();
             this.panel56 = new System.Windows.Forms.Panel();
-            this.label100 = new System.Windows.Forms.Label();
+            this.numberOfExamsLbl = new System.Windows.Forms.Label();
             this.label101 = new System.Windows.Forms.Label();
             this.pictureBox53 = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel1.SuspendLayout();
@@ -507,24 +507,24 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Transparent;
-            this.panel3.Controls.Add(this.label3);
+            this.panel3.Controls.Add(this.lblFirstBalance);
             this.panel3.Controls.Add(this.label5);
             this.panel3.Location = new System.Drawing.Point(4, 3);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(119, 83);
             this.panel3.TabIndex = 2;
             // 
-            // label3
+            // lblFirstBalance
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.label3.Location = new System.Drawing.Point(15, 42);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(92, 24);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "00.00 DA";
+            this.lblFirstBalance.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblFirstBalance.AutoSize = true;
+            this.lblFirstBalance.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.lblFirstBalance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.lblFirstBalance.Location = new System.Drawing.Point(15, 42);
+            this.lblFirstBalance.Name = "lblFirstBalance";
+            this.lblFirstBalance.Size = new System.Drawing.Size(92, 24);
+            this.lblFirstBalance.TabIndex = 3;
+            this.lblFirstBalance.Text = "00.00 DA";
             // 
             // label5
             // 
@@ -561,24 +561,24 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Transparent;
-            this.panel4.Controls.Add(this.label6);
+            this.panel4.Controls.Add(this.lblIncomes);
             this.panel4.Controls.Add(this.label7);
             this.panel4.Location = new System.Drawing.Point(4, 3);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(119, 83);
             this.panel4.TabIndex = 2;
             // 
-            // label6
+            // lblIncomes
             // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(232)))), ((int)(((byte)(130)))));
-            this.label6.Location = new System.Drawing.Point(14, 42);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(92, 24);
-            this.label6.TabIndex = 3;
-            this.label6.Text = "00.00 DA";
+            this.lblIncomes.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblIncomes.AutoSize = true;
+            this.lblIncomes.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.lblIncomes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(232)))), ((int)(((byte)(130)))));
+            this.lblIncomes.Location = new System.Drawing.Point(14, 42);
+            this.lblIncomes.Name = "lblIncomes";
+            this.lblIncomes.Size = new System.Drawing.Size(92, 24);
+            this.lblIncomes.TabIndex = 3;
+            this.lblIncomes.Text = "00.00 DA";
             // 
             // label7
             // 
@@ -615,24 +615,24 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Transparent;
-            this.panel5.Controls.Add(this.label8);
+            this.panel5.Controls.Add(this.lblExpences);
             this.panel5.Controls.Add(this.label9);
             this.panel5.Location = new System.Drawing.Point(4, 3);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(119, 83);
             this.panel5.TabIndex = 2;
             // 
-            // label8
+            // lblExpences
             // 
-            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(72)))), ((int)(((byte)(87)))));
-            this.label8.Location = new System.Drawing.Point(12, 42);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(92, 24);
-            this.label8.TabIndex = 3;
-            this.label8.Text = "00.00 DA";
+            this.lblExpences.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblExpences.AutoSize = true;
+            this.lblExpences.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.lblExpences.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(72)))), ((int)(((byte)(87)))));
+            this.lblExpences.Location = new System.Drawing.Point(12, 42);
+            this.lblExpences.Name = "lblExpences";
+            this.lblExpences.Size = new System.Drawing.Size(92, 24);
+            this.lblExpences.TabIndex = 3;
+            this.lblExpences.Text = "00.00 DA";
             // 
             // label9
             // 
@@ -640,11 +640,11 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(72)))), ((int)(((byte)(87)))));
-            this.label9.Location = new System.Drawing.Point(-1, 18);
+            this.label9.Location = new System.Drawing.Point(25, 18);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(124, 24);
+            this.label9.Size = new System.Drawing.Size(79, 24);
             this.label9.TabIndex = 3;
-            this.label9.Text = "الرصيد الاول";
+            this.label9.Text = "النفقات";
             // 
             // flowLayoutPanel2
             // 
@@ -669,24 +669,24 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.internalAmount);
             this.panel2.Controls.Add(this.FirstRasid);
             this.panel2.Location = new System.Drawing.Point(4, 3);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(119, 83);
             this.panel2.TabIndex = 2;
             // 
-            // label4
+            // internalAmount
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(72)))), ((int)(((byte)(219)))));
-            this.label4.Location = new System.Drawing.Point(9, 42);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(92, 24);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "00.00 DA";
+            this.internalAmount.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.internalAmount.AutoSize = true;
+            this.internalAmount.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.internalAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(72)))), ((int)(((byte)(219)))));
+            this.internalAmount.Location = new System.Drawing.Point(9, 42);
+            this.internalAmount.Name = "internalAmount";
+            this.internalAmount.Size = new System.Drawing.Size(92, 24);
+            this.internalAmount.TabIndex = 3;
+            this.internalAmount.Text = "00.00 DA";
             // 
             // FirstRasid
             // 
@@ -762,24 +762,24 @@
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.Transparent;
-            this.panel8.Controls.Add(this.label16);
+            this.panel8.Controls.Add(this.num_files_lbl);
             this.panel8.Controls.Add(this.label17);
             this.panel8.Location = new System.Drawing.Point(4, 3);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(119, 83);
             this.panel8.TabIndex = 2;
             // 
-            // label16
+            // num_files_lbl
             // 
-            this.label16.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.label16.ForeColor = System.Drawing.Color.Silver;
-            this.label16.Location = new System.Drawing.Point(76, 43);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(21, 24);
-            this.label16.TabIndex = 3;
-            this.label16.Text = "0";
+            this.num_files_lbl.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.num_files_lbl.AutoSize = true;
+            this.num_files_lbl.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.num_files_lbl.ForeColor = System.Drawing.Color.Silver;
+            this.num_files_lbl.Location = new System.Drawing.Point(76, 43);
+            this.num_files_lbl.Name = "num_files_lbl";
+            this.num_files_lbl.Size = new System.Drawing.Size(21, 24);
+            this.num_files_lbl.TabIndex = 3;
+            this.num_files_lbl.Text = "0";
             // 
             // label17
             // 
@@ -924,7 +924,7 @@
             this.tabControl1.Padding = new System.Drawing.Point(8, 8);
             this.tabControl1.RightToLeftLayout = true;
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(520, 228);
+            this.tabControl1.Size = new System.Drawing.Size(510, 228);
             this.tabControl1.TabIndex = 3;
             // 
             // tabPage1
@@ -933,7 +933,7 @@
             this.tabPage1.Controls.Add(this.flowLayoutPanel24);
             this.tabPage1.Location = new System.Drawing.Point(4, 38);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(512, 186);
+            this.tabPage1.Size = new System.Drawing.Size(502, 186);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "اليوم ";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -946,7 +946,7 @@
             this.flowLayoutPanel24.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel24.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel24.Name = "flowLayoutPanel24";
-            this.flowLayoutPanel24.Size = new System.Drawing.Size(512, 186);
+            this.flowLayoutPanel24.Size = new System.Drawing.Size(502, 186);
             this.flowLayoutPanel24.TabIndex = 13;
             // 
             // flowLayoutPanel25
@@ -956,7 +956,7 @@
             this.flowLayoutPanel25.Controls.Add(this.panel46);
             this.flowLayoutPanel25.Controls.Add(this.panel47);
             this.flowLayoutPanel25.Dock = System.Windows.Forms.DockStyle.Right;
-            this.flowLayoutPanel25.Location = new System.Drawing.Point(276, 3);
+            this.flowLayoutPanel25.Location = new System.Drawing.Point(266, 3);
             this.flowLayoutPanel25.Name = "flowLayoutPanel25";
             this.flowLayoutPanel25.Size = new System.Drawing.Size(233, 185);
             this.flowLayoutPanel25.TabIndex = 7;
@@ -1128,7 +1128,7 @@
             this.flowLayoutPanel26.Controls.Add(this.panel48);
             this.flowLayoutPanel26.Controls.Add(this.panel50);
             this.flowLayoutPanel26.Controls.Add(this.panel49);
-            this.flowLayoutPanel26.Location = new System.Drawing.Point(48, 3);
+            this.flowLayoutPanel26.Location = new System.Drawing.Point(38, 3);
             this.flowLayoutPanel26.Name = "flowLayoutPanel26";
             this.flowLayoutPanel26.Size = new System.Drawing.Size(222, 185);
             this.flowLayoutPanel26.TabIndex = 8;
@@ -1257,7 +1257,7 @@
             this.tabPage2.Controls.Add(this.flowLayoutPanel15);
             this.tabPage2.Location = new System.Drawing.Point(4, 38);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Size = new System.Drawing.Size(512, 186);
+            this.tabPage2.Size = new System.Drawing.Size(502, 186);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "هذا الاسبوع";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -1270,7 +1270,7 @@
             this.flowLayoutPanel15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel15.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel15.Name = "flowLayoutPanel15";
-            this.flowLayoutPanel15.Size = new System.Drawing.Size(512, 186);
+            this.flowLayoutPanel15.Size = new System.Drawing.Size(502, 186);
             this.flowLayoutPanel15.TabIndex = 13;
             // 
             // flowLayoutPanel16
@@ -1280,7 +1280,7 @@
             this.flowLayoutPanel16.Controls.Add(this.panel25);
             this.flowLayoutPanel16.Controls.Add(this.panel26);
             this.flowLayoutPanel16.Dock = System.Windows.Forms.DockStyle.Right;
-            this.flowLayoutPanel16.Location = new System.Drawing.Point(276, 3);
+            this.flowLayoutPanel16.Location = new System.Drawing.Point(266, 3);
             this.flowLayoutPanel16.Name = "flowLayoutPanel16";
             this.flowLayoutPanel16.Size = new System.Drawing.Size(233, 185);
             this.flowLayoutPanel16.TabIndex = 7;
@@ -1452,7 +1452,7 @@
             this.flowLayoutPanel17.Controls.Add(this.panel27);
             this.flowLayoutPanel17.Controls.Add(this.panel29);
             this.flowLayoutPanel17.Controls.Add(this.panel10);
-            this.flowLayoutPanel17.Location = new System.Drawing.Point(48, 3);
+            this.flowLayoutPanel17.Location = new System.Drawing.Point(38, 3);
             this.flowLayoutPanel17.Name = "flowLayoutPanel17";
             this.flowLayoutPanel17.Size = new System.Drawing.Size(222, 185);
             this.flowLayoutPanel17.TabIndex = 8;
@@ -1581,7 +1581,7 @@
             this.tabPage3.Controls.Add(this.flowLayoutPanel18);
             this.tabPage3.Location = new System.Drawing.Point(4, 38);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(512, 186);
+            this.tabPage3.Size = new System.Drawing.Size(502, 186);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "هذا الشهر";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -1594,7 +1594,7 @@
             this.flowLayoutPanel18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel18.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel18.Name = "flowLayoutPanel18";
-            this.flowLayoutPanel18.Size = new System.Drawing.Size(512, 186);
+            this.flowLayoutPanel18.Size = new System.Drawing.Size(502, 186);
             this.flowLayoutPanel18.TabIndex = 13;
             // 
             // flowLayoutPanel19
@@ -1604,7 +1604,7 @@
             this.flowLayoutPanel19.Controls.Add(this.panel32);
             this.flowLayoutPanel19.Controls.Add(this.panel33);
             this.flowLayoutPanel19.Dock = System.Windows.Forms.DockStyle.Right;
-            this.flowLayoutPanel19.Location = new System.Drawing.Point(276, 3);
+            this.flowLayoutPanel19.Location = new System.Drawing.Point(266, 3);
             this.flowLayoutPanel19.Name = "flowLayoutPanel19";
             this.flowLayoutPanel19.Size = new System.Drawing.Size(233, 185);
             this.flowLayoutPanel19.TabIndex = 7;
@@ -1776,7 +1776,7 @@
             this.flowLayoutPanel20.Controls.Add(this.panel34);
             this.flowLayoutPanel20.Controls.Add(this.panel36);
             this.flowLayoutPanel20.Controls.Add(this.panel11);
-            this.flowLayoutPanel20.Location = new System.Drawing.Point(48, 3);
+            this.flowLayoutPanel20.Location = new System.Drawing.Point(38, 3);
             this.flowLayoutPanel20.Name = "flowLayoutPanel20";
             this.flowLayoutPanel20.Size = new System.Drawing.Size(222, 185);
             this.flowLayoutPanel20.TabIndex = 8;
@@ -1905,7 +1905,7 @@
             this.tabPage4.Controls.Add(this.flowLayoutPanel21);
             this.tabPage4.Location = new System.Drawing.Point(4, 38);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(512, 186);
+            this.tabPage4.Size = new System.Drawing.Size(502, 186);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "هذه السنة";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -1918,7 +1918,7 @@
             this.flowLayoutPanel21.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel21.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel21.Name = "flowLayoutPanel21";
-            this.flowLayoutPanel21.Size = new System.Drawing.Size(512, 186);
+            this.flowLayoutPanel21.Size = new System.Drawing.Size(502, 186);
             this.flowLayoutPanel21.TabIndex = 13;
             // 
             // flowLayoutPanel22
@@ -1928,7 +1928,7 @@
             this.flowLayoutPanel22.Controls.Add(this.panel39);
             this.flowLayoutPanel22.Controls.Add(this.panel40);
             this.flowLayoutPanel22.Dock = System.Windows.Forms.DockStyle.Right;
-            this.flowLayoutPanel22.Location = new System.Drawing.Point(276, 3);
+            this.flowLayoutPanel22.Location = new System.Drawing.Point(266, 3);
             this.flowLayoutPanel22.Name = "flowLayoutPanel22";
             this.flowLayoutPanel22.Size = new System.Drawing.Size(233, 185);
             this.flowLayoutPanel22.TabIndex = 7;
@@ -2100,7 +2100,7 @@
             this.flowLayoutPanel23.Controls.Add(this.panel41);
             this.flowLayoutPanel23.Controls.Add(this.panel43);
             this.flowLayoutPanel23.Controls.Add(this.panel12);
-            this.flowLayoutPanel23.Location = new System.Drawing.Point(48, 3);
+            this.flowLayoutPanel23.Location = new System.Drawing.Point(38, 3);
             this.flowLayoutPanel23.Name = "flowLayoutPanel23";
             this.flowLayoutPanel23.Size = new System.Drawing.Size(222, 185);
             this.flowLayoutPanel23.TabIndex = 8;
@@ -2229,7 +2229,7 @@
             this.tabPage5.Controls.Add(this.flowLayoutPanel12);
             this.tabPage5.Location = new System.Drawing.Point(4, 38);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(512, 186);
+            this.tabPage5.Size = new System.Drawing.Size(502, 186);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "آخر";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -2242,7 +2242,7 @@
             this.flowLayoutPanel12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel12.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel12.Name = "flowLayoutPanel12";
-            this.flowLayoutPanel12.Size = new System.Drawing.Size(512, 186);
+            this.flowLayoutPanel12.Size = new System.Drawing.Size(502, 186);
             this.flowLayoutPanel12.TabIndex = 13;
             // 
             // flowLayoutPanel13
@@ -2252,7 +2252,7 @@
             this.flowLayoutPanel13.Controls.Add(this.panel18);
             this.flowLayoutPanel13.Controls.Add(this.panel19);
             this.flowLayoutPanel13.Dock = System.Windows.Forms.DockStyle.Right;
-            this.flowLayoutPanel13.Location = new System.Drawing.Point(276, 3);
+            this.flowLayoutPanel13.Location = new System.Drawing.Point(266, 3);
             this.flowLayoutPanel13.Name = "flowLayoutPanel13";
             this.flowLayoutPanel13.Size = new System.Drawing.Size(233, 185);
             this.flowLayoutPanel13.TabIndex = 7;
@@ -2424,7 +2424,7 @@
             this.flowLayoutPanel14.Controls.Add(this.panel20);
             this.flowLayoutPanel14.Controls.Add(this.panel22);
             this.flowLayoutPanel14.Controls.Add(this.panel13);
-            this.flowLayoutPanel14.Location = new System.Drawing.Point(48, 3);
+            this.flowLayoutPanel14.Location = new System.Drawing.Point(38, 3);
             this.flowLayoutPanel14.Name = "flowLayoutPanel14";
             this.flowLayoutPanel14.Size = new System.Drawing.Size(222, 185);
             this.flowLayoutPanel14.TabIndex = 8;
@@ -2559,13 +2559,14 @@
             this.pnlExpences.Controls.Add(this.guna2Separator2);
             this.pnlExpences.Location = new System.Drawing.Point(418, 428);
             this.pnlExpences.Name = "pnlExpences";
-            this.pnlExpences.Size = new System.Drawing.Size(514, 533);
+            this.pnlExpences.Padding = new System.Windows.Forms.Padding(10);
+            this.pnlExpences.Size = new System.Drawing.Size(504, 533);
             this.pnlExpences.TabIndex = 4;
             // 
             // panel9
             // 
             this.panel9.Controls.Add(this.label18);
-            this.panel9.Location = new System.Drawing.Point(245, 3);
+            this.panel9.Location = new System.Drawing.Point(215, 13);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(266, 38);
             this.panel9.TabIndex = 5;
@@ -2585,9 +2586,9 @@
             // 
             // guna2Separator2
             // 
-            this.guna2Separator2.Location = new System.Drawing.Point(6, 47);
+            this.guna2Separator2.Location = new System.Drawing.Point(2, 57);
             this.guna2Separator2.Name = "guna2Separator2";
-            this.guna2Separator2.Size = new System.Drawing.Size(505, 11);
+            this.guna2Separator2.Size = new System.Drawing.Size(479, 11);
             this.guna2Separator2.TabIndex = 6;
             // 
             // chart1
@@ -2653,7 +2654,7 @@
             // 
             // panel15
             // 
-            this.panel15.Controls.Add(this.label28);
+            this.panel15.Controls.Add(this.numberOfStudentsLbl);
             this.panel15.Controls.Add(this.label29);
             this.panel15.Controls.Add(this.pictureBox12);
             this.panel15.Location = new System.Drawing.Point(51, 78);
@@ -2661,15 +2662,15 @@
             this.panel15.Size = new System.Drawing.Size(305, 67);
             this.panel15.TabIndex = 37;
             // 
-            // label28
+            // numberOfStudentsLbl
             // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(58, 19);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(27, 29);
-            this.label28.TabIndex = 2;
-            this.label28.Text = "0";
+            this.numberOfStudentsLbl.AutoSize = true;
+            this.numberOfStudentsLbl.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numberOfStudentsLbl.Location = new System.Drawing.Point(58, 19);
+            this.numberOfStudentsLbl.Name = "numberOfStudentsLbl";
+            this.numberOfStudentsLbl.Size = new System.Drawing.Size(27, 29);
+            this.numberOfStudentsLbl.TabIndex = 2;
+            this.numberOfStudentsLbl.Text = "0";
             // 
             // label29
             // 
@@ -2694,7 +2695,7 @@
             // 
             // panel21
             // 
-            this.panel21.Controls.Add(this.label38);
+            this.panel21.Controls.Add(this.numberOfFilesLbl);
             this.panel21.Controls.Add(this.label39);
             this.panel21.Controls.Add(this.pictureBox13);
             this.panel21.Location = new System.Drawing.Point(51, 151);
@@ -2702,15 +2703,15 @@
             this.panel21.Size = new System.Drawing.Size(305, 67);
             this.panel21.TabIndex = 38;
             // 
-            // label38
+            // numberOfFilesLbl
             // 
-            this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.Location = new System.Drawing.Point(58, 19);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(27, 29);
-            this.label38.TabIndex = 2;
-            this.label38.Text = "0";
+            this.numberOfFilesLbl.AutoSize = true;
+            this.numberOfFilesLbl.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numberOfFilesLbl.Location = new System.Drawing.Point(58, 19);
+            this.numberOfFilesLbl.Name = "numberOfFilesLbl";
+            this.numberOfFilesLbl.Size = new System.Drawing.Size(27, 29);
+            this.numberOfFilesLbl.TabIndex = 2;
+            this.numberOfFilesLbl.Text = "0";
             // 
             // label39
             // 
@@ -2735,7 +2736,7 @@
             // 
             // panel28
             // 
-            this.panel28.Controls.Add(this.label50);
+            this.panel28.Controls.Add(this.numberOfInstructorsLbl);
             this.panel28.Controls.Add(this.label51);
             this.panel28.Controls.Add(this.pictureBox14);
             this.panel28.Location = new System.Drawing.Point(51, 224);
@@ -2743,15 +2744,15 @@
             this.panel28.Size = new System.Drawing.Size(305, 67);
             this.panel28.TabIndex = 39;
             // 
-            // label50
+            // numberOfInstructorsLbl
             // 
-            this.label50.AutoSize = true;
-            this.label50.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label50.Location = new System.Drawing.Point(58, 19);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(27, 29);
-            this.label50.TabIndex = 2;
-            this.label50.Text = "0";
+            this.numberOfInstructorsLbl.AutoSize = true;
+            this.numberOfInstructorsLbl.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numberOfInstructorsLbl.Location = new System.Drawing.Point(58, 19);
+            this.numberOfInstructorsLbl.Name = "numberOfInstructorsLbl";
+            this.numberOfInstructorsLbl.Size = new System.Drawing.Size(27, 29);
+            this.numberOfInstructorsLbl.TabIndex = 2;
+            this.numberOfInstructorsLbl.Text = "0";
             // 
             // label51
             // 
@@ -2776,7 +2777,7 @@
             // 
             // panel35
             // 
-            this.panel35.Controls.Add(this.label62);
+            this.panel35.Controls.Add(this.numberOfCarsLbl);
             this.panel35.Controls.Add(this.label63);
             this.panel35.Controls.Add(this.pictureBox20);
             this.panel35.Location = new System.Drawing.Point(51, 297);
@@ -2784,15 +2785,15 @@
             this.panel35.Size = new System.Drawing.Size(305, 67);
             this.panel35.TabIndex = 40;
             // 
-            // label62
+            // numberOfCarsLbl
             // 
-            this.label62.AutoSize = true;
-            this.label62.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label62.Location = new System.Drawing.Point(58, 19);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(27, 29);
-            this.label62.TabIndex = 2;
-            this.label62.Text = "0";
+            this.numberOfCarsLbl.AutoSize = true;
+            this.numberOfCarsLbl.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numberOfCarsLbl.Location = new System.Drawing.Point(58, 19);
+            this.numberOfCarsLbl.Name = "numberOfCarsLbl";
+            this.numberOfCarsLbl.Size = new System.Drawing.Size(27, 29);
+            this.numberOfCarsLbl.TabIndex = 2;
+            this.numberOfCarsLbl.Text = "0";
             // 
             // label63
             // 
@@ -2817,7 +2818,7 @@
             // 
             // panel42
             // 
-            this.panel42.Controls.Add(this.label74);
+            this.panel42.Controls.Add(this.numberOfUsersLbl);
             this.panel42.Controls.Add(this.label75);
             this.panel42.Controls.Add(this.pictureBox27);
             this.panel42.Location = new System.Drawing.Point(51, 370);
@@ -2825,15 +2826,15 @@
             this.panel42.Size = new System.Drawing.Size(305, 67);
             this.panel42.TabIndex = 41;
             // 
-            // label74
+            // numberOfUsersLbl
             // 
-            this.label74.AutoSize = true;
-            this.label74.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label74.Location = new System.Drawing.Point(40, 19);
-            this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(27, 29);
-            this.label74.TabIndex = 2;
-            this.label74.Text = "0";
+            this.numberOfUsersLbl.AutoSize = true;
+            this.numberOfUsersLbl.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numberOfUsersLbl.Location = new System.Drawing.Point(40, 19);
+            this.numberOfUsersLbl.Name = "numberOfUsersLbl";
+            this.numberOfUsersLbl.Size = new System.Drawing.Size(27, 29);
+            this.numberOfUsersLbl.TabIndex = 2;
+            this.numberOfUsersLbl.Text = "0";
             // 
             // label75
             // 
@@ -2858,7 +2859,7 @@
             // 
             // panel51
             // 
-            this.panel51.Controls.Add(this.label90);
+            this.panel51.Controls.Add(this.numberOfGroupsLbl);
             this.panel51.Controls.Add(this.label91);
             this.panel51.Controls.Add(this.pictureBox34);
             this.panel51.Location = new System.Drawing.Point(51, 443);
@@ -2866,15 +2867,15 @@
             this.panel51.Size = new System.Drawing.Size(305, 67);
             this.panel51.TabIndex = 42;
             // 
-            // label90
+            // numberOfGroupsLbl
             // 
-            this.label90.AutoSize = true;
-            this.label90.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label90.Location = new System.Drawing.Point(40, 19);
-            this.label90.Name = "label90";
-            this.label90.Size = new System.Drawing.Size(27, 29);
-            this.label90.TabIndex = 2;
-            this.label90.Text = "0";
+            this.numberOfGroupsLbl.AutoSize = true;
+            this.numberOfGroupsLbl.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numberOfGroupsLbl.Location = new System.Drawing.Point(40, 19);
+            this.numberOfGroupsLbl.Name = "numberOfGroupsLbl";
+            this.numberOfGroupsLbl.Size = new System.Drawing.Size(27, 29);
+            this.numberOfGroupsLbl.TabIndex = 2;
+            this.numberOfGroupsLbl.Text = "0";
             // 
             // label91
             // 
@@ -2899,7 +2900,7 @@
             // 
             // panel52
             // 
-            this.panel52.Controls.Add(this.label92);
+            this.panel52.Controls.Add(this.numberOfExpencesLbl);
             this.panel52.Controls.Add(this.label93);
             this.panel52.Controls.Add(this.pictureBox41);
             this.panel52.Location = new System.Drawing.Point(51, 516);
@@ -2907,15 +2908,15 @@
             this.panel52.Size = new System.Drawing.Size(305, 67);
             this.panel52.TabIndex = 43;
             // 
-            // label92
+            // numberOfExpencesLbl
             // 
-            this.label92.AutoSize = true;
-            this.label92.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label92.Location = new System.Drawing.Point(58, 19);
-            this.label92.Name = "label92";
-            this.label92.Size = new System.Drawing.Size(27, 29);
-            this.label92.TabIndex = 2;
-            this.label92.Text = "0";
+            this.numberOfExpencesLbl.AutoSize = true;
+            this.numberOfExpencesLbl.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numberOfExpencesLbl.Location = new System.Drawing.Point(58, 19);
+            this.numberOfExpencesLbl.Name = "numberOfExpencesLbl";
+            this.numberOfExpencesLbl.Size = new System.Drawing.Size(27, 29);
+            this.numberOfExpencesLbl.TabIndex = 2;
+            this.numberOfExpencesLbl.Text = "0";
             // 
             // label93
             // 
@@ -2940,7 +2941,7 @@
             // 
             // panel53
             // 
-            this.panel53.Controls.Add(this.label94);
+            this.panel53.Controls.Add(this.numberOfLessonsLbl);
             this.panel53.Controls.Add(this.label95);
             this.panel53.Controls.Add(this.pictureBox50);
             this.panel53.Location = new System.Drawing.Point(51, 589);
@@ -2948,15 +2949,15 @@
             this.panel53.Size = new System.Drawing.Size(305, 67);
             this.panel53.TabIndex = 44;
             // 
-            // label94
+            // numberOfLessonsLbl
             // 
-            this.label94.AutoSize = true;
-            this.label94.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label94.Location = new System.Drawing.Point(58, 19);
-            this.label94.Name = "label94";
-            this.label94.Size = new System.Drawing.Size(27, 29);
-            this.label94.TabIndex = 2;
-            this.label94.Text = "0";
+            this.numberOfLessonsLbl.AutoSize = true;
+            this.numberOfLessonsLbl.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numberOfLessonsLbl.Location = new System.Drawing.Point(58, 19);
+            this.numberOfLessonsLbl.Name = "numberOfLessonsLbl";
+            this.numberOfLessonsLbl.Size = new System.Drawing.Size(27, 29);
+            this.numberOfLessonsLbl.TabIndex = 2;
+            this.numberOfLessonsLbl.Text = "0";
             // 
             // label95
             // 
@@ -2981,7 +2982,7 @@
             // 
             // panel54
             // 
-            this.panel54.Controls.Add(this.label96);
+            this.panel54.Controls.Add(this.percentageOfSuccessLbl);
             this.panel54.Controls.Add(this.label97);
             this.panel54.Controls.Add(this.pictureBox51);
             this.panel54.Location = new System.Drawing.Point(51, 662);
@@ -2989,15 +2990,15 @@
             this.panel54.Size = new System.Drawing.Size(305, 67);
             this.panel54.TabIndex = 45;
             // 
-            // label96
+            // percentageOfSuccessLbl
             // 
-            this.label96.AutoSize = true;
-            this.label96.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label96.Location = new System.Drawing.Point(58, 19);
-            this.label96.Name = "label96";
-            this.label96.Size = new System.Drawing.Size(27, 29);
-            this.label96.TabIndex = 2;
-            this.label96.Text = "0";
+            this.percentageOfSuccessLbl.AutoSize = true;
+            this.percentageOfSuccessLbl.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.percentageOfSuccessLbl.Location = new System.Drawing.Point(58, 19);
+            this.percentageOfSuccessLbl.Name = "percentageOfSuccessLbl";
+            this.percentageOfSuccessLbl.Size = new System.Drawing.Size(27, 29);
+            this.percentageOfSuccessLbl.TabIndex = 2;
+            this.percentageOfSuccessLbl.Text = "0";
             // 
             // label97
             // 
@@ -3022,7 +3023,7 @@
             // 
             // panel55
             // 
-            this.panel55.Controls.Add(this.label98);
+            this.panel55.Controls.Add(this.numberOfArchivedFilesLbl);
             this.panel55.Controls.Add(this.label99);
             this.panel55.Controls.Add(this.pictureBox52);
             this.panel55.Location = new System.Drawing.Point(51, 735);
@@ -3030,15 +3031,15 @@
             this.panel55.Size = new System.Drawing.Size(305, 67);
             this.panel55.TabIndex = 46;
             // 
-            // label98
+            // numberOfArchivedFilesLbl
             // 
-            this.label98.AutoSize = true;
-            this.label98.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label98.Location = new System.Drawing.Point(40, 19);
-            this.label98.Name = "label98";
-            this.label98.Size = new System.Drawing.Size(27, 29);
-            this.label98.TabIndex = 2;
-            this.label98.Text = "0";
+            this.numberOfArchivedFilesLbl.AutoSize = true;
+            this.numberOfArchivedFilesLbl.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numberOfArchivedFilesLbl.Location = new System.Drawing.Point(40, 19);
+            this.numberOfArchivedFilesLbl.Name = "numberOfArchivedFilesLbl";
+            this.numberOfArchivedFilesLbl.Size = new System.Drawing.Size(27, 29);
+            this.numberOfArchivedFilesLbl.TabIndex = 2;
+            this.numberOfArchivedFilesLbl.Text = "0";
             // 
             // label99
             // 
@@ -3063,7 +3064,7 @@
             // 
             // panel56
             // 
-            this.panel56.Controls.Add(this.label100);
+            this.panel56.Controls.Add(this.numberOfExamsLbl);
             this.panel56.Controls.Add(this.label101);
             this.panel56.Controls.Add(this.pictureBox53);
             this.panel56.Location = new System.Drawing.Point(51, 808);
@@ -3071,15 +3072,15 @@
             this.panel56.Size = new System.Drawing.Size(305, 67);
             this.panel56.TabIndex = 47;
             // 
-            // label100
+            // numberOfExamsLbl
             // 
-            this.label100.AutoSize = true;
-            this.label100.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label100.Location = new System.Drawing.Point(58, 19);
-            this.label100.Name = "label100";
-            this.label100.Size = new System.Drawing.Size(27, 29);
-            this.label100.TabIndex = 2;
-            this.label100.Text = "0";
+            this.numberOfExamsLbl.AutoSize = true;
+            this.numberOfExamsLbl.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numberOfExamsLbl.Location = new System.Drawing.Point(58, 19);
+            this.numberOfExamsLbl.Name = "numberOfExamsLbl";
+            this.numberOfExamsLbl.Size = new System.Drawing.Size(27, 29);
+            this.numberOfExamsLbl.TabIndex = 2;
+            this.numberOfExamsLbl.Text = "0";
             // 
             // label101
             // 
@@ -3334,23 +3335,23 @@
         private System.Windows.Forms.PictureBox piccurrentbox;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label FirstRasid;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label internalAmount;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblFirstBalance;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblIncomes;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel5;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblExpences;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel QuiqOverview;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
@@ -3369,7 +3370,7 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel8;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label num_files_lbl;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
@@ -3531,47 +3532,47 @@
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Panel panel15;
-        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label numberOfStudentsLbl;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.Panel panel21;
-        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label numberOfFilesLbl;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.PictureBox pictureBox13;
         private System.Windows.Forms.Panel panel28;
-        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.Label numberOfInstructorsLbl;
         private System.Windows.Forms.Label label51;
         private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.Panel panel35;
-        private System.Windows.Forms.Label label62;
+        private System.Windows.Forms.Label numberOfCarsLbl;
         private System.Windows.Forms.Label label63;
         private System.Windows.Forms.PictureBox pictureBox20;
         private System.Windows.Forms.Panel panel42;
-        private System.Windows.Forms.Label label74;
+        private System.Windows.Forms.Label numberOfUsersLbl;
         private System.Windows.Forms.Label label75;
         private System.Windows.Forms.PictureBox pictureBox27;
         private System.Windows.Forms.Panel panel51;
-        private System.Windows.Forms.Label label90;
+        private System.Windows.Forms.Label numberOfGroupsLbl;
         private System.Windows.Forms.Label label91;
         private System.Windows.Forms.PictureBox pictureBox34;
         private System.Windows.Forms.Panel panel52;
-        private System.Windows.Forms.Label label92;
+        private System.Windows.Forms.Label numberOfExpencesLbl;
         private System.Windows.Forms.Label label93;
         private System.Windows.Forms.PictureBox pictureBox41;
         private System.Windows.Forms.Panel panel53;
-        private System.Windows.Forms.Label label94;
+        private System.Windows.Forms.Label numberOfLessonsLbl;
         private System.Windows.Forms.Label label95;
         private System.Windows.Forms.PictureBox pictureBox50;
         private System.Windows.Forms.Panel panel54;
-        private System.Windows.Forms.Label label96;
+        private System.Windows.Forms.Label percentageOfSuccessLbl;
         private System.Windows.Forms.Label label97;
         private System.Windows.Forms.PictureBox pictureBox51;
         private System.Windows.Forms.Panel panel55;
-        private System.Windows.Forms.Label label98;
+        private System.Windows.Forms.Label numberOfArchivedFilesLbl;
         private System.Windows.Forms.Label label99;
         private System.Windows.Forms.PictureBox pictureBox52;
         private System.Windows.Forms.Panel panel56;
-        private System.Windows.Forms.Label label100;
+        private System.Windows.Forms.Label numberOfExamsLbl;
         private System.Windows.Forms.Label label101;
         private System.Windows.Forms.PictureBox pictureBox53;
     }

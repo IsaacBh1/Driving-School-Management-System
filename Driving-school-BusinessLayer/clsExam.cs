@@ -44,6 +44,12 @@ namespace Driving_school_BusinessLayer
             return typeid == 1 ? "نظري" : "تطبيقي";
         }
 
+
+        public static int GetNumberOfExamsPerDay(string day)
+        {
+            return clsExamDataAccess.GetNumberOfExamsPerDay(day); 
+        }
+
         public static int GetExamType(string typeName)
         {
             return typeName == "نظري" ? 1 : 2;

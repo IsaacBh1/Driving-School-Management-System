@@ -747,7 +747,8 @@
     <None Include="Resources\DrivoLogo.png" />
     <None Include="Resources\x %283%29.png" />
     <None Include="Resources\minus.png" />
-    <Content Include="Todo.txt" />
+    <None Include="Resources\user-gear.png" />
+    <None Include="Resources\user-gear %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

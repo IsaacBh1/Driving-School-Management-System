@@ -294,6 +294,43 @@ namespace DrivingSchool_DataAccessLayer
             return id;
         }
 
+
+        public static int GetNumberOfExamsPerDay(string day)
+        {
+            int NumberofExams = 0;
+            SqlConnection connection = new SqlConnection(ConnectionString);
+            string query = "select count(*) as NumberOfExams from Exams where DateOfExam like '"+day+"'; ";
+
+            SqlCommand command = new SqlCommand(query, connection);
+
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        NumberofExams = (int)reader["NumberOfExams"];
+                    }
+                }
+                reader.Close();
+            }
+            catch
+            {
+                return -1;
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return NumberofExams;
+
+        }
+
+
+
+
         public static bool IsExamExist(int condidateFileID, int examTypeID, int? result, string situation, DateTime dateOfExam, string additionalNotes, TimeSpan timeOfExam)
         {
             return (GetExamIDByInfo(condidateFileID, examTypeID, result, situation, dateOfExam, additionalNotes, timeOfExam) != -1);

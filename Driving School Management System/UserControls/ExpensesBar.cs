@@ -6,18 +6,18 @@ namespace Driving_School_Management_System
 {
     public partial class ExpensesBar : UserControl
     {
-        public string ExpenceName { get; set; } 
-        public float ExpenceValue { get; set; } = 0f;
+        public string ExpenceName { get; set; }
+        public decimal ExpenceValue { get; set; } = 0; 
 
-        private Random rnd = new Random();
+        //private Random rnd = new Random();
 
         private Color color { get; set; }
-        public ExpensesBar(string ExpenceName ,float ExpenceValue , int percentage)
+        public ExpensesBar(string ExpenceName ,decimal ExpenceValue , int percentage)
         {
             InitializeComponent();
             this.ExpenceName = ExpenceName;
             this.ExpenceValue = ExpenceValue;
-            color = Color.FromArgb(rnd.Next(256), rnd.Next(256), rnd.Next(256));
+            color = Color.FromArgb(100, 200, 30);
             ExpenceProgressBar.ProgressColor = color;
             ExpenceProgressBar.ProgressColor2 = color; 
             ExpenceProgressBar.Value = percentage;

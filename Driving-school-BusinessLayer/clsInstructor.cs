@@ -131,6 +131,5 @@ namespace Driving_school_BusinessLayer
 
         }
 
-
     }
 }

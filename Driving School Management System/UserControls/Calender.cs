@@ -69,8 +69,9 @@ namespace Driving_School_Management_System
             }
             for (int i = 1; i <= Day; i++)
             {
-                int NumberOfLessons = clsLesson.GetNumberOfLessonsPerDay(getDayString(i)); 
-                CalenderDay Cd = new CalenderDay(i.ToString(), NumberOfLessons , 0);
+                int NumberOfLessons = clsLesson.GetNumberOfLessonsPerDay(getDayString(i));
+                int NumberOfExams = clsExam.GetNumberOfExamsPerDay(getDayString(i)); 
+                CalenderDay Cd = new CalenderDay(i.ToString(), NumberOfLessons , NumberOfExams);
                 flowLayoutPanel1.Controls.Add(Cd);
             }
         }

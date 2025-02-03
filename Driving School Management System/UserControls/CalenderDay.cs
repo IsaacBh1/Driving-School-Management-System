@@ -16,32 +16,36 @@ namespace Driving_School_Management_System
         {
             InitializeComponent();
             NumberDay.Text = dayNumber.ToString();
-            if (numberofExams > 0 || numberofLessons > 0)
+            if (numberofExams > 0)
             {
-                InetializeCalederDay(numberofLessons, numberofExams);
+                InetializeCalederDayExam( numberofExams);
+            }
+            if(numberofLessons > 0)
+            {
+                InetializeCalederDayLesson(numberofLessons); 
             }
             _day = dayNumber;
             BackColor = Color.Gray;
-
-
-
         }
-
-        private void InetializeCalederDay(int numberofLessons, int numberofExams)
+        private void InetializeCalederDayLesson(int numberofLessons)
         {
-            Label lbl1 = new Label();
-            lbl1.Text = " امتحانات : " + numberofExams.ToString();
-            lbl1.ForeColor = Color.Red;
-            flowLayoutPanel2.Controls.Add(lbl1);
-
+      
             Label lbl = new Label();
             lbl.Text = " دروس : " + numberofLessons.ToString(); 
             lbl.ForeColor = Color.Blue;
             flowLayoutPanel2.Controls.Add(lbl);
         }
 
+        private void InetializeCalederDayExam(int numberofExams)
+        {
+            Label lbl1 = new Label();
+            lbl1.Text = " امتحانات : " + numberofExams.ToString();
+            lbl1.ForeColor = Color.Red;
+            flowLayoutPanel2.Controls.Add(lbl1);
+        }
 
- 
+
+
         private void flowLayoutPanel1_Paint(object sender, MouseEventArgs e)
         {
             if (IsChecked) BackColor = Color.Gray;

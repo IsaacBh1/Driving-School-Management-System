@@ -38,7 +38,7 @@
             this.NameOfExpence.AutoSize = true;
             this.NameOfExpence.Font = new System.Drawing.Font("Tahoma", 10F);
             this.NameOfExpence.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.NameOfExpence.Location = new System.Drawing.Point(295, 6);
+            this.NameOfExpence.Location = new System.Drawing.Point(174, 6);
             this.NameOfExpence.Name = "NameOfExpence";
             this.NameOfExpence.Size = new System.Drawing.Size(148, 24);
             this.NameOfExpence.TabIndex = 0;
@@ -48,7 +48,7 @@
             // 
             this.ValueOfExpence.AutoSize = true;
             this.ValueOfExpence.ForeColor = System.Drawing.Color.Gray;
-            this.ValueOfExpence.Location = new System.Drawing.Point(209, 10);
+            this.ValueOfExpence.Location = new System.Drawing.Point(20, 6);
             this.ValueOfExpence.Name = "ValueOfExpence";
             this.ValueOfExpence.Size = new System.Drawing.Size(77, 19);
             this.ValueOfExpence.TabIndex = 1;

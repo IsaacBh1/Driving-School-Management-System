@@ -95,6 +95,7 @@
             this.txtbxPassword.ShadowDecoration.Parent = this.txtbxPassword;
             this.txtbxPassword.Size = new System.Drawing.Size(374, 50);
             this.txtbxPassword.TabIndex = 13;
+            this.txtbxPassword.TabStop = false;
             // 
             // label1
             // 
